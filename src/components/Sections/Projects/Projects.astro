@@ -1,0 +1,28 @@
+---
+import { projectData } from "@/config/ProjectData"
+import ProjectCard from "./ProjectCard.astro"
+
+const projects = [
+    {
+        title: 'Slam Stats',
+        description: 'Aplicación de estadísticas deportivas',
+        images: ['/public/proyect-images/fer.jpg','/public/proyect-images/ROY.png']
+    },
+    {
+        title: 'InfoFarms',
+        description: 'Aplicación de estadísticas deportivas',
+        images: ['/public/proyect-images/fer.jpg','/public/proyect-images/ROY.png']
+    }
+]
+---
+
+<h2 class="font-bold text-center p-5 sm:text-3xl">Mis proyectos</h2>
+
+<div class="w-full h-[350px] p-3 grid gap-3">
+    {projectData.map(project => (
+        <ProjectCard 
+            title={project.title}
+            description={project.description}
+            images={project.images}/>
+    ))}
+</div>

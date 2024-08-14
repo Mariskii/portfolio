@@ -1,0 +1,16 @@
+---
+import { CarouselImages } from '@/components/Common/Carouser';
+
+const { title, description, images } = Astro.props;
+---
+
+<div class="w-full h-fit p-4 rounded-2xl shadow-xl bg-white">
+    <p class="text-center font-bold p-3 text-2xl">{title}</p>
+    <div class="flex flex-col sm:flex-row w-full items-center sm:items-start">
+        <CarouselImages images={images} client:load/>
+        <div class="flex flex-col items-center justify-between p-2">
+            <p>{description}</p>
+            <p class="font-bold">Tecnologías:</p>
+        </div>
+    </div>
+</div>
