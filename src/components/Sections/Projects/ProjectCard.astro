@@ -2,8 +2,9 @@
 import { CarouselImages } from '@/components/Common/Carouser';
 import type { GithubLink } from '@/interfaces/project.interface';
 import { FaGithub } from "react-icons/fa";
+import { CiShare1 } from "react-icons/ci";
 
-const { title, description, images, technologies, repositories } = Astro.props;
+const { title, description, images, technologies, repositories, projectLink } = Astro.props;
 ---
 
 <div class="w-full h-fit max-w-7xl p-4 rounded-2xl shadow-xl bg-white">
@@ -21,12 +22,18 @@ const { title, description, images, technologies, repositories } = Astro.props;
                 </div>
             </div>
 
-            <div class="flex gap-1">
+            <div class="flex items-center gap-1">
                 {repositories.map((repository:GithubLink) => (
                     <a 
-                    class="flex items-center gap-1 p-2 m-4 rounded-full border border-solid border-gray-600 bg-slate-900 text-white"
-                    href={repository.link}><FaGithub/> {repository.title}</a>
+                        target="_blank"
+                        class="flex items-center gap-1 p-2 m-4 rounded-full border border-solid border-gray-600 bg-slate-900 text-white"
+                        href={repository.link}><FaGithub/> {repository.title}</a>
                 ))}
+
+                {projectLink ? <a class="flex gap-1 items-center rounded-full p-2 transition-all bg-green-400 hover:bg-green-500 text-white" href={projectLink} target="_blank">
+                    <CiShare1/>
+                    Visitar web
+                    </a> : null}
             </div>
         </div>
     </div>
