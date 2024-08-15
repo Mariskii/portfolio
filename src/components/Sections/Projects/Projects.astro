@@ -16,16 +16,18 @@ const projects = [
 ]
 ---
 
-<h2 class="font-bold text-center p-5 sm:text-3xl">Mis proyectos</h2>
+<section class="pt-5">
+    <h2 class="font-bold text-center p-7 text-4xl sm:text-7xl">Mis proyectos</h2>
 
-<div class="w-full h-fit flex flex-col items-center gap-3">
-    {projectData.map(project => (
-        <ProjectCard 
-            title={project.title}
-            description={project.description}
-            images={project.images}
-            technologies={project.technologies}
-            repositories={project.linksGitHub}
-            projectLink={project.linkProject}/>
-    ))}
-</div>
+    <div class="w-full h-fit flex flex-col items-center gap-3">
+        {projectData.map(project => (
+            <ProjectCard 
+                title={project.title}
+                description={project.description}
+                images={project.images}
+                technologies={project.technologies}
+                repositories={project.linksGitHub}
+                projectLink={project.linkProject}/>
+        ))}
+    </div>
+</section>

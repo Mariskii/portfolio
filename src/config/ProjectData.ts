@@ -29,7 +29,7 @@ export const projectData: ProjectData[] = [
             '/public/project_images/generademd/showcase-generate_md-02.png',
             '/public/project_images/generademd/showcase-generate_md-03.png',
         ],
-        technologies:['Angular','Angular Material', 'Karma and Jasmine'],
+        technologies:['Angular','Angular Material','Bootstrap', 'Karma and Jasmine'],
         linksGitHub:[
             {
                 title:'Repositorio',
