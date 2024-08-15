@@ -37,5 +37,22 @@ export const projectData: ProjectData[] = [
             },
         ],
         linkProject:'https://generate-md.vercel.app/home'
+    },
+    {
+        title:'InfoFarms [Building]',
+        description:'Trabajo para una empresa del sector agrario. Esta aplicación es un gestor de las plantaciones y los cultivos de la empresa, además de gestionar pedidos y facturación. Por otro la aplicación gestiona usuarios con sus respectivos roles para darles permisos o restringirles acceso, todo esto acompañado de un sistema de autenticación que funciona junto a JWTs.',
+        images: [
+            '/public/project_images/infofarms/showcase-infofarms-01.png',
+            '/public/project_images/infofarms/showcase-infofarms-02.png',
+            '/public/project_images/infofarms/showcase-infofarms-03.png',
+            '/public/project_images/infofarms/showcase-infofarms-04.png',
+        ],
+        technologies:['Angular','Primeng','Tailwind', 'Karma and Jasmine', 'Spring', 'Spring Boot', 'Spring Security', 'JWT'],
+        linksGitHub:[
+            {
+                title:'Repositorio',
+                link:'https://github.com/Mariskii/InfoFarm-App'
+            },
+        ],
     }
 ];
