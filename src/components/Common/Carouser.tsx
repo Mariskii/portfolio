@@ -1,5 +1,6 @@
 import * as React from "react"
- 
+import Autoplay from "embla-carousel-autoplay" 
+
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +20,12 @@ export function CarouselImages({images}: CarouselImagesProps) {
         opts={{ 
             align: "start",
             loop: true,
-         }}>
+         }}
+         plugins={[
+            Autoplay({
+              delay: 3500,
+            }),
+          ]}>
         <CarouselContent>
             {images.map(image => (
                 <CarouselItem>

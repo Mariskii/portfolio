@@ -1,16 +1,23 @@
 ---
 import { CarouselImages } from '@/components/Common/Carouser';
 
-const { title, description, images } = Astro.props;
+const { title, description, images, technologies } = Astro.props;
 ---
 
-<div class="w-full h-fit p-4 rounded-2xl shadow-xl bg-white">
+<div class="w-full h-fit max-w-7xl p-4 rounded-2xl shadow-xl bg-white">
     <p class="text-center font-bold p-3 text-2xl">{title}</p>
-    <div class="flex flex-col sm:flex-row w-full items-center sm:items-start">
+    <div class="flex flex-col h-3/4 sm:flex-row w-full items-center sm:items-start">
         <CarouselImages images={images} client:load/>
-        <div class="flex flex-col items-center justify-between p-2">
-            <p>{description}</p>
-            <p class="font-bold">Tecnologías:</p>
+        <div class="flex flex-col h-full items-center justify-between p-2">
+            <p class="text-xl text-wrap w-full p-2">{description}</p>
+            <div class="h-full flex flex-col items-center justify-center">
+                <p class="font-bold p-4">Tecnologías:</p>
+                <div class="flex flex-wrap justify-center gap-2 items-center">
+                    {technologies.map((technologie: string) => (
+                        <p class="rounded-full border text-center p-2 border-orange-500 text-orange-500">{technologie}</p>
+                    ))}
+                </div>
+            </div>
         </div>
     </div>
 </div>
