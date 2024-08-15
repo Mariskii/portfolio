@@ -1,3 +1,9 @@
+---
+import { FaFileAlt } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+---
+
 <div class="flex flex-col justify-center items-center text-white rounded-lg p-7 space-y-5 object-center">
     <h2 class="text-5xl sm:text-9xl">Vicent Payà</h2>
     <h3 class="text-4xl sm:text-7xl font-serif">Full-Stack developer</h3>
@@ -6,5 +12,24 @@
         Me considero alguien perfeccionista y trabajador que le encanta aprender y trabajar en equipo para alcanzar objetivos.
     </p>
 
-    <button class="rounded-full bg-gray-600 text-white p-3 font-bold shadow-lg hover:bg-gray-800">Descargar CV</button>
+    <div class="flex gap-2">
+        <a 
+            target="_blank"
+            class="flex gap-1 items-center rounded-full transition-all bg-blue-600 text-white p-3 font-bold shadow-lg hover:bg-blue-800"
+            href="https://www.linkedin.com/in/vicent-pay%C3%A0-4357232b7/">
+            <FaLinkedin className="text-white"/>
+            Linkedin
+        </a>
+        <button class="flex gap-1 items-center rounded-full transition-all bg-gray-600 text-white p-3 font-bold shadow-lg hover:bg-gray-800">
+            <FaFileAlt />
+            Descargar CV
+        </button>
+        <a 
+            target="_blank"
+            class="flex gap-1 items-center rounded-full transition-all bg-gray-800 text-white p-3 font-bold shadow-lg hover:bg-gray-900"
+            href="https://github.com/Mariskii">
+            <FaGithub/>
+            GitHub
+        </a>
+    </div>
 </div>

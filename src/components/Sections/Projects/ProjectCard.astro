@@ -26,7 +26,7 @@ const { title, description, images, technologies, repositories, projectLink } = 
                 {repositories.map((repository:GithubLink) => (
                     <a 
                         target="_blank"
-                        class="flex items-center gap-1 p-2 m-4 rounded-full border border-solid border-gray-600 bg-slate-900 text-white"
+                        class="flex items-center gap-1 p-2 m-4 rounded-full border border-solid transition-all border-gray-600 bg-slate-900 hover:bg-slate-700 text-white"
                         href={repository.link}><FaGithub/> {repository.title}</a>
                 ))}
 
