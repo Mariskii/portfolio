@@ -9,7 +9,7 @@ export const projectData: ProjectData[] = [
             '/public/project_images/slam-stats/showcase-slam_stats-02.png',
             '/public/project_images/slam-stats/showcase-slam_stats-03.png',
         ],
-        technologies:['Angular', 'Ionic', 'Spring', 'Karma and Jasmine'],
+        technologies:['Angular', 'Ionic', 'Spring', 'Spring Boot', 'Karma and Jasmine'],
         linksGitHub:[
             {
                 title:'Repositorio Front',
