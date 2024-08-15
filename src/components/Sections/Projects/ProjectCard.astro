@@ -1,15 +1,16 @@
 ---
 import { CarouselImages } from '@/components/Common/Carouser';
+import type { GithubLink } from '@/interfaces/project.interface';
 
-const { title, description, images, technologies } = Astro.props;
+const { title, description, images, technologies, repositories } = Astro.props;
 ---
 
 <div class="w-full h-fit max-w-7xl p-4 rounded-2xl shadow-xl bg-white">
     <p class="text-center font-bold p-3 text-2xl">{title}</p>
-    <div class="flex flex-col h-3/4 sm:flex-row w-full items-center sm:items-start">
+    <div class="flex flex-col md:flex-row w-full items-center md:items-start">
         <CarouselImages images={images} client:load/>
-        <div class="flex flex-col h-full items-center justify-between p-2">
-            <p class="text-xl text-wrap w-full p-2">{description}</p>
+        <div class="flex flex-col w-full md:w-3/4 h-full items-center justify-between p-2">
+            <p class="text-xl text-wrap p-2">{description}</p>
             <div class="h-full flex flex-col items-center justify-center">
                 <p class="font-bold p-4">Tecnologías:</p>
                 <div class="flex flex-wrap justify-center gap-2 items-center">
@@ -17,6 +18,14 @@ const { title, description, images, technologies } = Astro.props;
                         <p class="rounded-full border text-center p-2 border-orange-500 text-orange-500">{technologie}</p>
                     ))}
                 </div>
+            </div>
+
+            <div class="flex gap-1">
+                {repositories.map((repository:GithubLink) => (
+                    <a 
+                    class="p-2 m-4 rounded-full border border-solid border-gray-600 bg-slate-900 text-white"
+                    href={repository.link}>{repository.title}</a>
+                ))}
             </div>
         </div>
     </div>

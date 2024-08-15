@@ -3,6 +3,11 @@ export interface ProjectData  {
     description: string
     images: string[],
     technologies: string[],
-    linkGitHub: string,
+    linksGitHub: GithubLink[],
     linkProject?: string
+}
+
+export interface GithubLink {
+    title: string,
+    link: string
 }

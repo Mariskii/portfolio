@@ -10,6 +10,32 @@ export const projectData: ProjectData[] = [
             '/public/project_images/slam-stats/showcase-slam_stats-03.png',
         ],
         technologies:['Angular', 'Ionic', 'Spring', 'Karma and Jasmine'],
-        linkGitHub:''
+        linksGitHub:[
+            {
+                title:'Repositorio Front',
+                link:'https://github.com/Mariskii/SlamStats-ionic'
+            },
+            {
+                title:'Repositorio Back',
+                link:'https://github.com/Mariskii/SlamStatsAPI'
+            }
+        ]
+    },
+    {
+        title:'Generate.md',
+        description:'Proyecto web desarrollado con Angular para generar documentos markdown para la documentación de proyectos de software. Alguna de las funcionalidades de la web es la división del documento en componentes, reactividad al escribir y previsualización del documento.',
+        images: [
+            '/public/project_images/generademd/showcase-generate_md-01.png',
+            '/public/project_images/generademd/showcase-generate_md-02.png',
+            '/public/project_images/generademd/showcase-generate_md-03.png',
+        ],
+        technologies:['Angular','Angular Material', 'Karma and Jasmine'],
+        linksGitHub:[
+            {
+                title:'Repositorio',
+                link:'https://github.com/Mariskii/Generate.md'
+            },
+        ],
+        linkProject:'https://generate-md.vercel.app/home'
     }
 ];
