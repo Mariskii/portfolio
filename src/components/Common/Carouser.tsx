@@ -16,7 +16,7 @@ interface CarouselImagesProps {
 export function CarouselImages({images}: CarouselImagesProps) {
   return (
     <Carousel 
-        className="w-full max-w-xs justify-center"
+        className="w-full max-w-sm justify-center"
         opts={{ 
             align: "start",
             loop: true,
