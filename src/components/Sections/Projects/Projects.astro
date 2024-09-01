@@ -1,26 +1,11 @@
 ---
 import { projectData } from "@/config/ProjectData"
 import ProjectCard from "./ProjectCard.astro"
-
-const projects = [
-    {
-        title: 'Slam Stats',
-        description: 'Aplicación de estadísticas deportivas',
-        images: ['/public/proyect-images/fer.jpg','/public/proyect-images/ROY.png']
-    },
-    {
-        title: 'InfoFarms',
-        description: 'Aplicación de estadísticas deportivas',
-        images: ['/public/proyect-images/fer.jpg','/public/proyect-images/ROY.png']
-    }
-]
-
-const text = 'Mis proyectos'
 ---
 
 <section class="pt-5 p-2 sm:p-4">
 
-    <h2 class="font-bold text-center p-7 text-4xl sm:text-7xl">Mis Proyectos</h2>
+    <h2 class="font-bold text-center p-7 text-4xl sm:text-7xl gradient-text">Mis Proyectos</h2>
 
     <div class="w-full h-fit flex flex-col items-center gap-3">
         {projectData.map(project => (

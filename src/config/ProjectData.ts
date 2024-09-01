@@ -9,7 +9,7 @@ export const projectData: ProjectData[] = [
             '/project_images/slam-stats/showcase-slam_stats-02.png',
             '/project_images/slam-stats/showcase-slam_stats-03.png',
         ],
-        technologies:['Angular', 'Ionic', 'Spring', 'Spring Boot', 'Karma and Jasmine'],
+        technologies:['Angular', 'Ionic', 'Spring', 'Spring Boot', 'Karma and Jasmine', 'PostreSQL'],
         linksGitHub:[
             {
                 title:'Repositorio Front',
@@ -20,6 +20,27 @@ export const projectData: ProjectData[] = [
                 link:'https://github.com/Mariskii/SlamStatsAPI'
             }
         ]
+    },
+    {
+        title:'Urlino URL Shortener',
+        description:'Proyecto web que consiste en un acortador de URLs totalmente escalable que implementa el OAuth2 de Github para guardar los datos y las urls de los usuarios. Las urls pueden ser creadas tanto con cuenta como sin cuenta, pero los usuarios podrán crear y editar sus propias URLs customizadas.',
+        images: [
+            '/project_images/urlino/showcase_urlino-01.png',
+            '/project_images/urlino/showcase_urlino-02.png',
+            '/project_images/urlino/showcase_urlino-03.png',
+        ],
+        technologies:['Angular', 'Spring', 'Spring Boot', 'OAuth2', 'Tailwind', 'Angular Material', 'Karma and Jasmine', 'MongoDB'],
+        linksGitHub:[
+            {
+                title:'Repositorio Front',
+                link:'https://github.com/Mariskii/Urlino-App'
+            },
+            {
+                title:'Repositorio Back',
+                link:'https://github.com/Mariskii/Urlino-Api'
+            }
+        ],
+        linkProject: 'https://urlino.net'
     },
     {
         title:'Generate.md',
@@ -47,7 +68,7 @@ export const projectData: ProjectData[] = [
             '/project_images/infofarms/showcase-infofarms-03.png',
             '/project_images/infofarms/showcase-infofarms-04.png',
         ],
-        technologies:['Angular','Primeng','Tailwind', 'Karma and Jasmine', 'Spring', 'Spring Boot', 'Spring Security', 'JWT'],
+        technologies:['Angular','Primeng','Tailwind', 'Karma and Jasmine', 'Spring', 'Spring Boot', 'Spring Security', 'JWT', 'PostreSQL'],
         linksGitHub:[
             {
                 title:'Repositorio',

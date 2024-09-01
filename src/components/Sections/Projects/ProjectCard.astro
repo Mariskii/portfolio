@@ -7,7 +7,31 @@ import { CiShare1 } from "react-icons/ci";
 const { title, description, images, technologies, repositories, projectLink } = Astro.props;
 ---
 
-<div class="w-full h-full max-w-7xl p-3 m-5 rounded-2xl shadow-xl bg-white">
+<style>
+    /* @keyframes show {
+        from {
+            opacity: 0;
+            scale: 15%;
+        }
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+
+    .projectCard {
+        view-timeline-name: --card;
+        view-timeline-axis: block;
+        animation-timeline: --card;
+        animation-name: show;
+
+        animation-range: entry 8% cover 18%;
+        animation-fill-mode: none;
+    } */
+
+</style>
+
+<div class="projectCard w-full h-full max-w-7xl p-3 m-5 rounded-2xl shadow-xl bg-white">
     <p class="text-center font-bold p-3 m-2 text-2xl rounded-xl bg-green-400 text-white">{title}</p>
     <div class="flex flex-col lg:flex-row items-center lg:items-start">
         <CarouselImages images={images} client:load/>
@@ -27,7 +51,7 @@ const { title, description, images, technologies, repositories, projectLink } = 
                 {repositories.map((repository:GithubLink) => (
                     <a 
                         target="_blank"
-                        class="flex items-center gap-1 p-2 m-4 rounded-full border border-solid transition-all border-gray-600 bg-slate-900 hover:bg-slate-700 text-white text-center text-sm"
+                        class="flex items-center gap-1 p-2 rounded-full border border-solid transition-all border-gray-600 bg-slate-900 hover:bg-slate-700 text-white text-center text-sm"
                         href={repository.link}><FaGithub/> {repository.title}</a>
                 ))}
 
