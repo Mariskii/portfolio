@@ -61,7 +61,7 @@ export const projectData: ProjectData[] = [
     },
     {
         title:'InfoFarms [Building]',
-        description:'Trabajo para una empresa del sector agrario. Esta aplicación es un gestor de las plantaciones y los cultivos de la empresa, además de gestionar pedidos y facturación. Por otro la aplicación gestiona usuarios con sus respectivos roles para darles permisos o restringirles acceso, todo esto acompañado de un sistema de autenticación que funciona junto a JWTs.',
+        description:'Trabajo para una empresa del sector agrario. Esta aplicación es un gestor de las plantaciones y los cultivos de la empresa, además de gestionar pedidos y facturación. Por otro lado la aplicación gestiona usuarios con sus respectivos roles para darles permisos o restringirles acceso, todo esto acompañado de un sistema de autenticación que funciona junto a JWTs.',
         images: [
             '/project_images/infofarms/showcase-infofarms-01.png',
             '/project_images/infofarms/showcase-infofarms-02.png',

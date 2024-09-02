@@ -28,7 +28,7 @@ export function CarouselImages({images}: CarouselImagesProps) {
             {images.map(image => (
                 <CarouselItem>
                     <div className="p-1">
-                        <img className="rounded-xl" src={image} alt="project-img" />             
+                        <img loading="lazy" className="rounded-xl" src={image} alt="project-img" />             
                     </div>
                 </CarouselItem>
             ))}    
